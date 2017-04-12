@@ -7,7 +7,7 @@
     <ProjectGuid>{7ECD4D03-396A-4995-ACFF-47C5C1BC2F6F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ImageSegmentation</RootNamespace>
-    <AssemblyName>ImageSegmentation</AssemblyName>
+    <AssemblyName>PresentationCompanion</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -34,8 +34,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="libpxcclr.cs, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\libpxcclr.cs.10.0.26.400\lib\net40\libpxcclr.cs.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSenses, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sharpsenses.realsense.0.10.0.0\lib\net45\SharpSenses.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSenses.RealSense, Version=0.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sharpsenses.realsense.0.10.0.0\lib\net45\SharpSenses.RealSense.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -85,6 +95,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
